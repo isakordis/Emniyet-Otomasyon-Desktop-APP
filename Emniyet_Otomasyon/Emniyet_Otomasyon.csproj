@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48E284BE-5BFF-4EB6-B63F-61BCD4810C62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emniyet_Otomasyon</RootNamespace>
+    <AssemblyName>Emniyet_Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gorev-Nobet-Kontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gorev-Nobet-Kontrol.Designer.cs">
+      <DependentUpon>Gorev-Nobet-Kontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izın_Iste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izın_Iste.Designer.cs">
+      <DependentUpon>Izın_Iste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremıUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremıUnuttum.Designer.cs">
+      <DependentUpon>SifremıUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SorguKaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SorguKaydı.Designer.cs">
+      <DependentUpon>SorguKaydı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş.Designer.cs">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı Arayüzü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı Arayüzü.Designer.cs">
+      <DependentUpon>Kullanıcı Arayüzü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıKayıt.Designer.cs">
+      <DependentUpon>KullanıcıKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nobet Yaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nobet Yaz.Designer.cs">
+      <DependentUpon>Nobet Yaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sabıka Ara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sabıka Ara.Designer.cs">
+      <DependentUpon>Sabıka Ara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sabıka Kaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sabıka Kaydı.Designer.cs">
+      <DependentUpon>Sabıka Kaydı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Savcılık İzni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Savcılık İzni.Designer.cs">
+      <DependentUpon>Savcılık İzni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SorguAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SorguAra.Designer.cs">
+      <DependentUpon>SorguAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Talep-Istek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Talep-Istek.Designer.cs">
+      <DependentUpon>Talep-Istek.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Giriş.resx">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gorev-Nobet-Kontrol.resx">
+      <DependentUpon>Gorev-Nobet-Kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izın_Iste.resx">
+      <DependentUpon>Izın_Iste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı Arayüzü.resx">
+      <DependentUpon>Kullanıcı Arayüzü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıKayıt.resx">
+      <DependentUpon>KullanıcıKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nobet Yaz.resx">
+      <DependentUpon>Nobet Yaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sabıka Ara.resx">
+      <DependentUpon>Sabıka Ara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sabıka Kaydı.resx">
+      <DependentUpon>Sabıka Kaydı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Savcılık İzni.resx">
+      <DependentUpon>Savcılık İzni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifremıUnuttum.resx">
+      <DependentUpon>SifremıUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SorguAra.resx">
+      <DependentUpon>SorguAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SorguKaydı.resx">
+      <DependentUpon>SorguKaydı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Talep-Istek.resx">
+      <DependentUpon>Talep-Istek.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
